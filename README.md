@@ -1,5 +1,10 @@
 # directoryWatcher
-  использование модуля:
+
+Модуль предназначен для отслеживания файла с заданным именем в директории.
+При обнаружении файла, его добавлении, переименовании или удалении в приложение отправляется соответствующее сообщение.
+
+Использование модуля:
+
   FolderMonitor: TFolderMonitor;
 
   FolderMonitor := TFolderMonitor.Create(ExtractFilePath(ParamStr(0)), CODESITE_CONFIGFILENAME, Self.Handle);
